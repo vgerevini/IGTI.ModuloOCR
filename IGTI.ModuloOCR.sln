@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IGTI.ModuloOCR.UI", "IGTI.ModuloOCR\IGTI.ModuloOCR.UI.csproj", "{4DD77CF3-B059-4AD8-AFFA-3D44F436B9D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IGTI.ModuloOCR.Model", "IGTI.ModuloOCR.Model\IGTI.ModuloOCR.Model.csproj", "{20E43074-52FD-4162-9E1E-104F50EF2235}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DD77CF3-B059-4AD8-AFFA-3D44F436B9D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DD77CF3-B059-4AD8-AFFA-3D44F436B9D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DD77CF3-B059-4AD8-AFFA-3D44F436B9D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DD77CF3-B059-4AD8-AFFA-3D44F436B9D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20E43074-52FD-4162-9E1E-104F50EF2235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E43074-52FD-4162-9E1E-104F50EF2235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20E43074-52FD-4162-9E1E-104F50EF2235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20E43074-52FD-4162-9E1E-104F50EF2235}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0420F80B-01F5-43A0-AC51-E3696558F557}
+	EndGlobalSection
+EndGlobal

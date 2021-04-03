@@ -1,0 +1,48 @@
+﻿@using IGTI.ModuloOCR.Model;
+
+@model MostQIApi
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<main>
+    <form asp-action="ReadImage" enctype="multipart/form-data" method="post">
+        <div class="avatar-wrapper">
+            <div class="upload-button">
+                <i class="fa" aria-hidden="true"></i>
+            </div>
+            <input asp-for="File" class="file-upload" type="file" accept="image/*" />
+            <span asp-validation-for="File" class="text-danger"></span>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-user-plus"></i> Carregar
+            </button>
+        </div>
+    </form>
+    <div class="row">
+        @if (Model.Result != null)
+        {
+            @foreach (MostQIResult doc in Model.Result)
+            {
+                <div>
+                    <label>Tipo de Documento: @doc.Type</label>
+                </div>
+                @foreach (MostQIField campo in doc.Fields)
+                {
+                    <div>
+                        <label>@campo.Name: @campo.Value</label>
+                    </div>
+                }
+
+            }
+        }
+    </div>
+</main>
+
+
+
+
+
+
+

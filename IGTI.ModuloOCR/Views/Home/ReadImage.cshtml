@@ -1,0 +1,25 @@
+﻿@using IGTI.ModuloOCR.Model;
+
+@model MostQIApi
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    @if (Model.Result != null)
+    {
+        @foreach (MostQIResult doc in Model.Result)
+        {
+            <div>
+                <label>Tipo de Documento: @doc.Type</label>
+            </div>
+            @foreach (MostQIField campo in doc.Fields)
+            {
+                <div>
+                    <label>@campo.Name: @campo.Value</label>
+                </div>
+            }
+
+        }
+    }
+</div>
